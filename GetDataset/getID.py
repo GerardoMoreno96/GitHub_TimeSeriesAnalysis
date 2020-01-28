@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import sys
 
-path = "/reposLists/reposList{}.txt".format(sys.argv[1])
+path = "GitHub_TimeSeriesAnalysis/GetDataset/machine{}/reposLists_{}/reposList{}.txt".format(sys.argv[1],sys.argv[1],sys.argv[2])
 file_to_read = open(path,'r')
 count = 1
 id_number = 0
