@@ -8,6 +8,6 @@ while read full_name; do
   echo \"languages\" : >> languages1.json
   curl -H "Authorization: token TOKEN" https://api.github.com/repos/$full_name/languages  >>  languages1.json
   echo }, >> languages1.json
-done <list.txt
+done <uniqueRepos1.txt
 
 echo ] >> languages1.json
